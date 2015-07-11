@@ -41,22 +41,24 @@ a {
 
 /* line 36, ../components/sass/_base.scss */
 p {
+  text-align: justify;
+  text-justify: inter-word;
   margin-bottom: 10px; }
 
-/* line 41, ../components/sass/_base.scss */
+/* line 43, ../components/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 45, ../components/sass/_base.scss */
+/* line 47, ../components/sass/_base.scss */
 .buttons, .educational-notify a.edu-button, .edu-student a.edu-st-button, .research a.research-button, .rel-sites a.rel-button {
   line-height: 200%; }
 
-/* line 49, ../components/sass/_base.scss */
+/* line 51, ../components/sass/_base.scss */
 *:focus {
   outline: 0; }
 
-/* line 52, ../components/sass/_base.scss */
+/* line 54, ../components/sass/_base.scss */
 .note {
   max-width: 100%;
   padding: 0px 20px;
@@ -80,7 +82,7 @@ img {
     top: 6px;
     right: 5px; }
 
-/* line 56, ../components/sass/_base.scss */
+/* line 58, ../components/sass/_base.scss */
 .edu-button {
   max-width: 100%;
   position: relative;
@@ -108,12 +110,12 @@ img {
     width: 100%;
     max-width: 100%; }
 
-/* line 59, ../components/sass/_base.scss */
+/* line 61, ../components/sass/_base.scss */
 .edu-button:hover {
   color: #fff;
   background-color: #35bf4c; }
 
-/* line 62, ../components/sass/_base.scss */
+/* line 64, ../components/sass/_base.scss */
 .edu-st-button {
   max-width: 100%;
   position: relative;
@@ -141,12 +143,12 @@ img {
     width: 100%;
     max-width: 100%; }
 
-/* line 65, ../components/sass/_base.scss */
+/* line 67, ../components/sass/_base.scss */
 .edu-st-button:hover {
   color: #fff;
   background-color: #768EE9; }
 
-/* line 68, ../components/sass/_base.scss */
+/* line 70, ../components/sass/_base.scss */
 .research-button {
   max-width: 100%;
   position: relative;
@@ -174,12 +176,12 @@ img {
     width: 100%;
     max-width: 100%; }
 
-/* line 71, ../components/sass/_base.scss */
+/* line 73, ../components/sass/_base.scss */
 .research-button:hover {
   color: #6077C1;
   background-color: #f4f4f4; }
 
-/* line 74, ../components/sass/_base.scss */
+/* line 76, ../components/sass/_base.scss */
 .rel-button {
   max-width: 100%;
   position: relative;
@@ -207,7 +209,7 @@ img {
     width: 100%;
     max-width: 100%; }
 
-/* line 77, ../components/sass/_base.scss */
+/* line 79, ../components/sass/_base.scss */
 .rel-button:hover {
   color: #fff;
   background-color: #8e8e8e; }
@@ -249,15 +251,16 @@ header {
   margin: 0;
   overflow: hidden;
   *zoom: 1;
+  border-bottom: 3px #768EE9 solid;
   box-shadow: 4px 4px 0 -8px #efefef; }
-  /* line 41, ../components/sass/_layout.scss */
+  /* line 44, ../components/sass/_layout.scss */
   header .top-bar {
     background-color: #343451;
     color: #fff;
     height: 40px;
     overflow: hidden;
     *zoom: 1; }
-  /* line 49, ../components/sass/_layout.scss */
+  /* line 52, ../components/sass/_layout.scss */
   header ul.top-nav {
     margin-top: 0;
     mergin-bottom: 0;
@@ -265,11 +268,11 @@ header {
     float: right;
     margin-left: 1.59744%;
     display: inline; }
-    /* line 58, ../components/sass/_layout.scss */
+    /* line 61, ../components/sass/_layout.scss */
     header ul.top-nav > li.top-nav-list {
       display: inline-block;
       float: none; }
-  /* line 64, ../components/sass/_layout.scss */
+  /* line 67, ../components/sass/_layout.scss */
   header .search-bar {
     width: 23.80192%;
     float: right;
@@ -281,12 +284,12 @@ header {
     display: inline;
     padding-top: 5px;
     position: relative; }
-    /* line 70, ../components/sass/_layout.scss */
+    /* line 73, ../components/sass/_layout.scss */
     header .search-bar input.search {
-      -moz-transition: all 1s;
-      -o-transition: all 1s;
-      -webkit-transition: all 1s;
-      transition: all 1s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
       background-color: #d6d6d6;
       border: none;
       height: 30px;
@@ -295,12 +298,12 @@ header {
       float: left;
       padding-right: 10px;
       padding-left: 30px; }
-    /* line 83, ../components/sass/_layout.scss */
+    /* line 86, ../components/sass/_layout.scss */
     header .search-bar input.search:focus {
       width: 220px;
       border: none;
       background-color: #f4f4f4; }
-    /* line 90, ../components/sass/_layout.scss */
+    /* line 93, ../components/sass/_layout.scss */
     header .search-bar:after {
       content: "\f002";
       position: absolute;
@@ -309,35 +312,34 @@ header {
       font-size: 22px;
       color: #8e8e8e; }
 
-/* line 105, ../components/sass/_layout.scss */
+/* line 108, ../components/sass/_layout.scss */
 ul.top-nav > li {
   border-left: 1px #fff solid;
   padding-left: 0;
   padding-right: 0;
   margin-right: 0;
   margin-right: -5px; }
-/* line 114, ../components/sass/_layout.scss */
+/* line 117, ../components/sass/_layout.scss */
 ul.top-nav > li:last-child {
   border-left: 0px solid; }
-/* line 117, ../components/sass/_layout.scss */
+/* line 120, ../components/sass/_layout.scss */
 ul.top-nav > li a {
   display: inline-block;
   line-height: 200%;
   color: #fff;
   padding: 3px 13px 5px; }
-/* line 124, ../components/sass/_layout.scss */
+/* line 127, ../components/sass/_layout.scss */
 ul.top-nav > li a:hover {
   background-color: #FF6743; }
 
-/* line 130, ../components/sass/_layout.scss */
+/* line 133, ../components/sass/_layout.scss */
 .banner {
   overflow: hidden;
   *zoom: 1;
   position: relative;
   padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom: 3px #768EE9 solid; }
-  /* line 141, ../components/sass/_layout.scss */
+  padding-bottom: 0px; }
+  /* line 142, ../components/sass/_layout.scss */
   .banner .site-logo {
     width: 32.26837%;
     float: right;
@@ -347,33 +349,34 @@ ul.top-nav > li a:hover {
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px; }
-    /* line 149, ../components/sass/_layout.scss */
+    /* line 150, ../components/sass/_layout.scss */
     .banner .site-logo > img.logo {
       max-width: 100%; }
-  /* line 154, ../components/sass/_layout.scss */
+  /* line 155, ../components/sass/_layout.scss */
   .banner span.top-date {
     position: absolute;
     left: 15%;
-    top: 20px;
-    padding: 10px; }
-  /* line 160, ../components/sass/_layout.scss */
+    top: 45px;
+    padding: 10px;
+    border-bottom: 1px #d6d6d6 dashed; }
+  /* line 164, ../components/sass/_layout.scss */
   .banner span.top-date:before {
     content: "\f073";
     position: absolute;
     right: -15px;
     top: 15px; }
-  /* line 167, ../components/sass/_layout.scss */
-  .banner ul.main-nav {
-    width: 66.13419%;
+
+/* line 175, ../components/sass/_layout.scss */
+.navigation {
+  margin: 0;
+  padding: 0;
+  background-color: #d6d6d6; }
+  /* line 180, ../components/sass/_layout.scss */
+  .navigation ul.main-nav {
+    width: 100%;
     float: right;
     margin-left: 1.59744%;
     display: inline;
-    float: left;
-    margin-left: 0;
-    *margin-right: -1em;
-    display: inline;
-    position: absolute;
-    bottom: 10px;
     margin: 0;
     padding: 0;
     border: 0;
@@ -381,7 +384,7 @@ ul.top-nav > li a:hover {
     *zoom: 1;
     text-align: center; }
     /* line 62, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
-    .banner ul.main-nav li {
+    .navigation ul.main-nav li {
       list-style-image: none;
       list-style-type: none;
       margin-left: 0;
@@ -390,48 +393,47 @@ ul.top-nav > li a:hover {
       padding-left: 4px;
       padding-right: 4px; }
       /* line 49, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
-      .banner ul.main-nav li:first-child {
+      .navigation ul.main-nav li:first-child {
         padding-left: 0; }
       /* line 50, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
-      .banner ul.main-nav li:last-child {
+      .navigation ul.main-nav li:last-child {
         padding-right: 0; }
       /* line 52, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
-      .banner ul.main-nav li.last {
+      .navigation ul.main-nav li.last {
         padding-right: 0; }
-    /* line 175, ../components/sass/_layout.scss */
-    .banner ul.main-nav > li.nav-list {
+    /* line 186, ../components/sass/_layout.scss */
+    .navigation ul.main-nav > li.nav-list {
       display: inline-block;
       float: none;
       padding: 0; }
-    /* line 182, ../components/sass/_layout.scss */
-    .banner ul.main-nav > li a {
-      -moz-transition: all 1s;
-      -o-transition: all 1s;
-      -webkit-transition: all 1s;
-      transition: all 1s;
+    /* line 193, ../components/sass/_layout.scss */
+    .navigation ul.main-nav > li a {
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
       display: inline-block;
       line-height: 260%;
-      background-color: #f4f4f4;
       padding: 0 10px; }
-    /* line 191, ../components/sass/_layout.scss */
-    .banner ul.main-nav > li a:hover {
+    /* line 203, ../components/sass/_layout.scss */
+    .navigation ul.main-nav > li a:hover {
       color: #fff;
       background-color: #768EE9; }
 
-/* line 202, ../components/sass/_layout.scss */
+/* line 214, ../components/sass/_layout.scss */
 .importants {
   overflow: hidden;
   *zoom: 1;
   background-color: #f4f4f4;
   padding-top: 10px;
   padding-bottom: 10px; }
-  /* line 210, ../components/sass/_layout.scss */
+  /* line 222, ../components/sass/_layout.scss */
   .importants .notify-wrapper {
     width: 23.80192%;
     float: right;
     margin-left: 1.59744%;
     display: inline; }
-    /* line 212, ../components/sass/_layout.scss */
+    /* line 224, ../components/sass/_layout.scss */
     .importants .notify-wrapper .notify {
       height: 400px;
       width: 100%;
@@ -441,7 +443,7 @@ ul.top-nav > li a:hover {
       padding: 20px;
       padding-top: 120px;
       position: relative; }
-    /* line 222, ../components/sass/_layout.scss */
+    /* line 234, ../components/sass/_layout.scss */
     .importants .notify-wrapper .notify:before {
       content: "\f12a";
       font-size: 40px;
@@ -452,7 +454,7 @@ ul.top-nav > li a:hover {
       position: absolute;
       left: 35%;
       top: 20px; }
-  /* line 236, ../components/sass/_layout.scss */
+  /* line 248, ../components/sass/_layout.scss */
   .importants .slide-area {
     width: 74.60064%;
     float: right;
@@ -465,26 +467,26 @@ ul.top-nav > li a:hover {
     overflow: hidden;
     *zoom: 1;
     height: 420px; }
-    /* line 241, ../components/sass/_layout.scss */
+    /* line 253, ../components/sass/_layout.scss */
     .importants .slide-area img.sliders {
       max-width: 100%;
       height: auto;
       padding-top: 10px; }
 
-/* line 255, ../components/sass/_layout.scss */
+/* line 267, ../components/sass/_layout.scss */
 .main-tab {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px; }
 
-/* line 262, ../components/sass/_layout.scss */
+/* line 274, ../components/sass/_layout.scss */
 .tab-header {
   width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
   display: inline-block; }
-  /* line 271, ../components/sass/_layout.scss */
+  /* line 283, ../components/sass/_layout.scss */
   .tab-header h3.tab-title {
     width: 40%;
     display: inline-block;
@@ -493,7 +495,7 @@ ul.top-nav > li a:hover {
     padding-bottom: 30px;
     border-bottom: 1px #d6d6d6 solid;
     position: relative; }
-  /* line 283, ../components/sass/_layout.scss */
+  /* line 295, ../components/sass/_layout.scss */
   .tab-header h3.tab-title:after {
     content: " \f0e7";
     position: absolute;
@@ -502,11 +504,11 @@ ul.top-nav > li a:hover {
     color: #d6d6d6;
     font-size: 24px; }
 
-/* line 296, ../components/sass/_layout.scss */
+/* line 308, ../components/sass/_layout.scss */
 .news-area {
   overflow: hidden;
   *zoom: 1; }
-  /* line 298, ../components/sass/_layout.scss */
+  /* line 310, ../components/sass/_layout.scss */
   .news-area article.news {
     width: 32.26837%;
     float: right;
@@ -514,7 +516,7 @@ ul.top-nav > li a:hover {
     display: inline;
     background-color: #f4f4f4;
     border: 1px #d6d6d6 solid; }
-    /* line 303, ../components/sass/_layout.scss */
+    /* line 315, ../components/sass/_layout.scss */
     .news-area article.news .news-thumb {
       overflow: hidden;
       *zoom: 1;
@@ -523,29 +525,29 @@ ul.top-nav > li a:hover {
       display: inline-block;
       margin: auto;
       text-align: center; }
-    /* line 311, ../components/sass/_layout.scss */
+    /* line 323, ../components/sass/_layout.scss */
     .news-area article.news .news-thumb img {
       max-width: 100%;
       margin: auto; }
-    /* line 315, ../components/sass/_layout.scss */
+    /* line 327, ../components/sass/_layout.scss */
     .news-area article.news .news-body {
       padding: 5%; }
-  /* line 320, ../components/sass/_layout.scss */
+  /* line 332, ../components/sass/_layout.scss */
   .news-area article.news:nth-of-type(3n) {
     float: left;
     margin-left: 0;
     *margin-right: -1em;
     display: inline; }
 
-/* line 324, ../components/sass/_layout.scss */
+/* line 336, ../components/sass/_layout.scss */
 .notifications {
   overflow: hidden;
   *zoom: 1;
   background-color: #FF6743; }
-  /* line 328, ../components/sass/_layout.scss */
+  /* line 340, ../components/sass/_layout.scss */
   .notifications .tab-title {
     color: #fff; }
-  /* line 331, ../components/sass/_layout.scss */
+  /* line 343, ../components/sass/_layout.scss */
   .notifications article.notify-body {
     width: 83.06709%;
     float: right;
@@ -558,12 +560,12 @@ ul.top-nav > li a:hover {
     border: 1px #d6d6d6 solid;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-right: 50px;
     margin-bottom: 20px;
     position: relative;
     min-height: 70px; }
-  /* line 351, ../components/sass/_layout.scss */
+  /* line 363, ../components/sass/_layout.scss */
   .notifications article.notify-body:before {
     content: "\f0a1";
     font-size: 30px;
@@ -576,85 +578,85 @@ ul.top-nav > li a:hover {
     top: 10px;
     padding: 10px; }
 
-/* line 365, ../components/sass/_layout.scss */
+/* line 377, ../components/sass/_layout.scss */
 .educational-notify {
   overflow: hidden;
   *zoom: 1;
   background-color: #f4f4f4; }
-  /* line 372, ../components/sass/_layout.scss */
+  /* line 384, ../components/sass/_layout.scss */
   .educational-notify a.edu-button {
     width: 49.20128%;
     float: right;
     margin-left: 1.59744%;
     display: inline; }
-  /* line 376, ../components/sass/_layout.scss */
+  /* line 388, ../components/sass/_layout.scss */
   .educational-notify a.edu-button:nth-of-type(2n) {
     float: left;
     margin-left: 0;
     *margin-right: -1em;
     display: inline; }
 
-/* line 380, ../components/sass/_layout.scss */
+/* line 392, ../components/sass/_layout.scss */
 .edu-student {
   overflow: hidden;
   *zoom: 1; }
-  /* line 382, ../components/sass/_layout.scss */
+  /* line 394, ../components/sass/_layout.scss */
   .edu-student a.edu-st-button {
     width: 49.20128%;
     float: right;
     margin-left: 1.59744%;
     display: inline; }
-  /* line 386, ../components/sass/_layout.scss */
+  /* line 398, ../components/sass/_layout.scss */
   .edu-student a.edu-st-button:nth-of-type(2n) {
     float: left;
     margin-left: 0;
     *margin-right: -1em;
     display: inline; }
 
-/* line 390, ../components/sass/_layout.scss */
+/* line 402, ../components/sass/_layout.scss */
 .research {
   overflow: hidden;
   *zoom: 1;
   background-color: #6077C1; }
-  /* line 393, ../components/sass/_layout.scss */
+  /* line 405, ../components/sass/_layout.scss */
   .research a.research-button {
     width: 32.26837%;
     float: right;
     margin-left: 1.59744%;
     display: inline; }
-  /* line 397, ../components/sass/_layout.scss */
+  /* line 409, ../components/sass/_layout.scss */
   .research a.research-button:nth-of-type(3n) {
     float: left;
     margin-left: 0;
     *margin-right: -1em;
     display: inline; }
-  /* line 400, ../components/sass/_layout.scss */
+  /* line 412, ../components/sass/_layout.scss */
   .research .tab-title {
     color: #fff; }
 
-/* line 404, ../components/sass/_layout.scss */
+/* line 416, ../components/sass/_layout.scss */
 .rel-sites {
   overflow: hidden;
   *zoom: 1; }
-  /* line 406, ../components/sass/_layout.scss */
+  /* line 418, ../components/sass/_layout.scss */
   .rel-sites a.rel-button {
     width: 49.20128%;
     float: right;
     margin-left: 1.59744%;
     display: inline; }
-  /* line 410, ../components/sass/_layout.scss */
+  /* line 422, ../components/sass/_layout.scss */
   .rel-sites a.rel-button:nth-of-type(2n) {
     float: left;
     margin-left: 0;
     *margin-right: -1em;
     display: inline; }
 
-/* line 415, ../components/sass/_layout.scss */
+/* line 427, ../components/sass/_layout.scss */
 .services {
   overflow: hidden;
   *zoom: 1;
   background-color: #f4f4f4; }
-  /* line 418, ../components/sass/_layout.scss */
+  /* line 430, ../components/sass/_layout.scss */
   .services .service {
     width: 83.06709%;
     float: right;
@@ -664,7 +666,7 @@ ul.top-nav > li a:hover {
     display: block;
     margin: auto; }
 
-/* line 427, ../components/sass/_layout.scss */
+/* line 439, ../components/sass/_layout.scss */
 footer {
   overflow: hidden;
   *zoom: 1;
