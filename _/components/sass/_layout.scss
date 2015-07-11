@@ -1,0 +1,438 @@
+//susy setup ------------------------------------
+
+$total-columns : 12;
+$column-width : 4.3em;
+$gutter-width : 1em;
+$grid-padding : $gutter-width;
+$from-direction: right;
+$omega-float : left;
+
+
+
+@include border-box-sizing;
+
+$small : 30em;
+$medium : 45em;
+$larg : 75em;
+
+.body-wrapper{
+	 
+	width : 66em;
+	max-width : 100%;
+	margin : auto;
+	background-color : #fff;
+	box-shadow : 0px 8px 7px 2px #ddd;
+}
+//content
+.layout {
+	@include container;
+	padding: 0 3%;
+
+	
+}
+
+//header ------------------------------------
+header {
+	width : 100%;
+	padding : 0;
+	margin : 0;
+	@include clearfix;
+	box-shadow : 4px 4px 0 -8px #efefef;
+	.top-bar{
+		//border-bottom : 1px #ddd solid;
+		background-color : $navi;
+		color : #fff;
+		height : 40px;
+		@include clearfix;
+		
+	}
+	ul.top-nav{
+		
+		@include span-columns(9,12);
+		//@include horizontal-list;
+		
+		
+		
+		&>li.top-nav-list{
+			display:inline-block;
+			float : none;
+		}
+	}
+
+	.search-bar{
+		@include span-columns(3,12);
+		@include omega;
+		padding-top : 5px;
+
+		position : relative;
+		& input.search{
+			@include single-transition;
+			background-color : $grey2;
+			border : none;
+			height : 30px;
+			width: 180px;
+			max-width : 100%;
+			float : left;
+			padding:{
+				right : 10px;
+				left : 30px;
+			}
+		}
+		& input.search:focus{
+			width : 220px;
+			border : none;
+			background-color : $grey1;
+
+		}
+		
+		&:after{
+			@extend .fa;
+			content : "\f002";
+			position : absolute;
+			left : 10px;
+			top : 8px;
+			font-size: 22px;
+			color : $grey3;
+		}
+		
+	}
+
+		
+}
+ul.top-nav{
+	&>li{
+		border-left : 1px #fff solid;
+		padding-left: 0;
+  		padding-right: 0;
+  		margin-right : 0;
+  		margin-right: -5px;
+		
+		
+	}
+	&>li:last-child{
+		border-left : 0px solid;
+	}
+	&>li a{
+		display : inline-block;
+		line-height: 200%;
+		color : #fff;
+		padding :0 10px 5px;
+
+	}
+	&>li a:hover{
+		background-color : $red;
+	}
+	
+}
+
+.banner {
+	@include clearfix;
+	position : relative;
+	padding:{
+		top : 10px;
+		bottom : 10px;
+	}
+	border :{
+		bottom : 3px $lightblue solid;
+	}
+	
+	.site-logo{
+		@include span-columns (4,12);
+		text-align : center;
+		margin : auto;
+		padding :{
+			top : 10px;
+			bottom : 10px;
+		}
+		&>img.logo{
+			max-width : 100%;
+		}
+	}
+
+	span.top-date{
+		position : absolute;
+		left : 15%;
+		top : 20px;
+		padding : 10px;
+	}
+	span.top-date:before{
+		@extend .fa;
+		content : "\f073";
+		position : absolute;
+		right : -15px;
+		top : 15px;
+	}
+	ul.main-nav{
+		@include span-columns(8,12);
+		@include omega;
+		position : absolute;
+		bottom : 10px;
+		@include horizontal-list;
+		text-align : center;
+
+		&>li.nav-list{
+			display: inline-block;
+			float : none;
+			padding : 0;
+
+			
+		}
+		&>li a{
+			@include single-transition;
+			display : inline-block;
+			line-height: 260%;
+			background-color : $grey1;
+			padding : 0 10px;
+			
+			
+		}
+		&>li a:hover{
+			color : #fff;
+			background-color : $lightblue;
+			
+		}
+
+	}
+	
+}
+
+// -------------slide area ------------------
+.importants{
+	@include clearfix;
+	background-color : $grey1;
+	padding:{
+		top : 10px;
+		bottom : 10px;
+	}
+	
+	.notify-wrapper{
+		@include span-columns(3,12);
+		.notify{
+			height : 400px;
+			width : 100%;
+			margin-top : 10px;
+			background-color: #fff;
+			border : 1px $grey2 solid;
+			padding : 20px;
+			padding-top : 120px;
+			position : relative;
+		}
+		.notify:before{
+			@extend .fa;
+			content : "\f12a";
+			font-size : 40px;
+			color : $red;
+			border : 4px $red solid;
+			border-radius : 50%;
+			padding : 15px 28px;
+			position : absolute;
+			left : 35%;
+			top : 20px;
+		}
+		
+	}
+	.slide-area{
+		@include span-columns(9,12);
+		@include omega;
+		@include clearfix;
+		height : 420px;
+		& img.sliders{
+			max-width : 100%;
+			//max-height : 100%;
+			height : auto;
+			padding:{
+				top : 10px;
+			}
+			
+		}
+
+	}
+}
+
+// ------------ tabs ----------------------
+.main-tab{
+	width : 100%;
+	padding:{
+		top : 30px;
+		bottom : 30px;
+	}
+}
+.tab-header{
+		width : 100%;
+		text-align: center;
+		margin:{
+			top : 20px;
+			bottom : 40px;
+		}
+		display : inline-block;
+
+		h3.tab-title{
+			width : 40%;
+			display : inline-block;
+			margin : auto;
+			font-size : 34px;
+			padding:{
+				bottom : 30px;
+			}
+			border-bottom : 1px $grey2 solid;
+			position : relative;
+
+		}
+		h3.tab-title:after{
+			@extend .fa;
+			content: " \f0e7";
+			  position: absolute;
+			  left: 46%;
+			  bottom: -30%;
+			  color: #d6d6d6;
+			  font-size: 24px;
+			  
+
+		}
+}
+
+.news-area{
+	@include clearfix;
+	article.news{
+		@include span-columns(4,12);
+		background-color : $grey1;
+		border : 1px $grey2 solid;
+
+		.news-thumb {
+			@include clearfix;
+			width : 100%;
+			height : 200px;
+			display: inline-block;
+			margin : auto;
+			text-align: center;
+		}
+		.news-thumb img{
+			max-width : 100%;
+			margin : auto;
+		}
+		.news-body {
+			padding : 5%;
+		}
+	
+	}
+	article.news:nth-of-type(3n){
+		@include omega;
+	}
+}
+.notifications{
+	@include clearfix;
+	background-color : $red;
+
+	.tab-title{
+		color : #fff;
+	}
+	article.notify-body{
+		@include span-columns(10,12);
+		float : none;
+		display : block;
+		margin : auto;
+		background-color : $grey1;
+		border : 1px $grey2 solid;
+		padding :{
+			top: 10px;
+			bottom: 10px;
+			left : 20px;
+			right : 50px;
+		}
+		margin-bottom : 20px;
+		position : relative;
+		min-height: 70px;
+
+
+	}
+
+	article.notify-body:before{
+		@extend .fa;
+		content: "\f0a1";
+		font-size : 30px;
+		background-color : #fff;
+		color : $red;
+		border : 4px $red solid;
+		border-radius : 50%;
+		position :absolute;
+		right : -25px;
+		top : 10px;
+		padding : 10px;
+	}
+}
+.educational-notify{
+ 	@include clearfix;
+ 	background-color : $grey1;
+
+ 	.note{
+ 		//@include span-columns(10,12);
+ 	}
+ 	a.edu-button{
+ 		@include span-columns(6,12);
+ 		@extend .buttons;
+ 	}
+ 	a.edu-button:nth-of-type(2n){
+ 		@include omega;
+ 	}
+ }
+.edu-student{
+	@include clearfix;
+	a.edu-st-button{
+		@include span-columns(6,12);
+		@extend .buttons;
+	}
+	a.edu-st-button:nth-of-type(2n){
+		@include omega;
+	}
+}
+.research{
+	@include clearfix;
+	background-color : $blue;
+	a.research-button{
+		@include span-columns(4,12);
+		@extend .buttons;
+	}
+	a.research-button:nth-of-type(3n){
+		@include omega;
+	}
+	.tab-title{
+		color : #fff;
+	}
+}
+.rel-sites{
+	@include clearfix;
+	a.rel-button{
+		@include span-columns(6,12);
+		@extend .buttons;
+	}
+	a.rel-button:nth-of-type(2n){
+		@include omega;
+	}
+}
+
+.services{
+	@include clearfix;
+	background-color : $grey1;
+	.service{
+		@include span-columns(10,12);
+		float : none;
+		display : block;
+		margin : auto;
+	}
+
+}
+
+	footer{
+		@include clearfix;
+		@include background($grey4);
+		text-align : center;
+		padding : 20px;
+		color : $grey1;
+		
+	}
+
+	// @inlcude at-breakpoint();
+	// @include single-transition();
+	// @include  horizontal-list;
+	// 	@include single-transition(background,0.3s,ease-out);
+	// }

@@ -1,0 +1,75 @@
+// @import url('http://fonts.googleapis.com/css?family=Bree+Serif|MerriWeather');
+// @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+// @import "icon/*.png";
+// @include all-icon-sprites;
+
+body {
+	font-family : tahoma;
+	font-size : 1.1rem;
+	line-height : 160%;
+	direction : rtl;
+	text-align : right;
+	background-color : #eee;
+	max-width : 100%;
+
+}
+// #{headings()}{
+// 	font-family : $font-secondary;
+// 	font-weight : normal;
+// 	@include text-shadow($base01 1px 1px);
+// }
+h1{
+	@include clearfix;
+}
+a{
+	text-decoration : none;
+	color : #737373;
+	&:hover{
+		color : $blue;
+	}
+}
+
+p{
+	margin:{
+		bottom: 10px;
+	}
+}
+img{
+	max-width : 100%;
+	height : auto;
+}
+.buttons{
+	line-height : 200%;
+}
+
+*:focus {
+    outline: 0;
+}
+.note {
+	@include colored-box($green);
+}
+
+.edu-button {
+	@include colored-button($grey3,#fff,"\f08d");
+}
+.edu-button:hover{
+	@include colored-button-hover($green,#fff);
+}
+.edu-st-button{
+	@include colored-button($grey3,#fff,"\f19d");
+}
+.edu-st-button:hover{
+	@include colored-button-hover($lightblue,#fff);
+}
+.research-button{
+	@include colored-button(#fff,$blue,"\f0c3");
+}
+.research-button:hover{
+	@include colored-button-hover($grey1,$blue);
+}
+.rel-button{
+	@include colored-button($navi,#fff,"\f08e");
+}
+.rel-button:hover{
+	@include colored-button-hover($grey3,#fff);
+}
