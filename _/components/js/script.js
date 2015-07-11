@@ -1,6 +1,11 @@
 $(document).ready(function (){
                 
-    $('a#tab-nav').on('click', function(event) {
+   $("#slides").slidesjs({
+        width: 800 ,
+        height: 400
+      });
+
+   $('a#tab-nav').on('click', function(event) {
         var target = $(this.href.pathname);
         if( target.length ) {
             event.preventDefault();

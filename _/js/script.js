@@ -1,1 +1,1 @@
-$(document).ready(function(){$("a#tab-nav").on("click",function(a){var b=$(this.href.pathname);b.length&&(a.preventDefault(),$("html, body").animate({scrollTop:b.offset().top},1e3))})});
+$(document).ready(function(){$("#slides").slidesjs({width:800,height:400}),$("a#tab-nav").on("click",function(a){var b=$(this.href.pathname);b.length&&(a.preventDefault(),$("html, body").animate({scrollTop:b.offset().top},1e3))})});
