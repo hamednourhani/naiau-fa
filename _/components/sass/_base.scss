@@ -2,15 +2,19 @@
 // @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 // @import "icon/*.png";
 // @include all-icon-sprites;
-
+@include font-face("BYekan", font-files("BYekan.ttf", "BYekan.woff"),"BYekan.eot");
 body {
-	font-family : tahoma;
+	font-family : "BYekan", tahoma;
 	font-size : 1.1rem;
 	line-height : 160%;
 	direction : rtl;
 	text-align : right;
 	background-color : #eee;
 	max-width : 100%;
+	margin : {
+		top :0;
+		bottom : 0;
+	}
 
 }
 // #{headings()}{

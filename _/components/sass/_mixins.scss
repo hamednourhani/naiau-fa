@@ -14,7 +14,7 @@
 
 @mixin colored_box($color:white,$icon:"\f05a") {
 	max-width: 100%;
-	padding : 10px 20px;
+	padding : 0px 20px;
 	background-color: $color;
 	border-color: border-color($color);
 	color : border-color($color);
@@ -35,7 +35,7 @@
 		padding : 10px;
 		color : border-color($color);
 		position : absolute;
-		top : 4px;
+		top : 6px;
 		right : 5px;
 	}
 }

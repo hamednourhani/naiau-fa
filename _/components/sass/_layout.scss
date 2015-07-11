@@ -47,6 +47,8 @@ header {
 		
 	}
 	ul.top-nav{
+		  margin-top: 0;
+		  mergin-bottom : 0;
 		
 		@include span-columns(9,12);
 		//@include horizontal-list;
@@ -116,7 +118,7 @@ ul.top-nav{
 		display : inline-block;
 		line-height: 200%;
 		color : #fff;
-		padding :0 10px 5px;
+		padding :3px 13px 5px;
 
 	}
 	&>li a:hover{
