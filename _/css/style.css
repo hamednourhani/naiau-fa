@@ -420,20 +420,76 @@ ul.top-nav > li a:hover {
       color: #fff;
       background-color: #768EE9; }
 
-/* line 214, ../components/sass/_layout.scss */
+/* line 212, ../components/sass/_layout.scss */
+.tab-navigation {
+  margin: 20px 0 10px;
+  padding: 0; }
+  /* line 217, ../components/sass/_layout.scss */
+  .tab-navigation ul.main-nav {
+    width: 100%;
+    float: right;
+    margin-left: 1.59744%;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1;
+    text-align: center; }
+    /* line 62, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+    .tab-navigation ul.main-nav li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      white-space: nowrap;
+      float: left;
+      padding-left: 4px;
+      padding-right: 4px; }
+      /* line 49, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+      .tab-navigation ul.main-nav li:first-child {
+        padding-left: 0; }
+      /* line 50, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+      .tab-navigation ul.main-nav li:last-child {
+        padding-right: 0; }
+      /* line 52, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+      .tab-navigation ul.main-nav li.last {
+        padding-right: 0; }
+    /* line 223, ../components/sass/_layout.scss */
+    .tab-navigation ul.main-nav > li.nav-list {
+      display: inline-block;
+      float: none;
+      padding: 0; }
+    /* line 230, ../components/sass/_layout.scss */
+    .tab-navigation ul.main-nav > li a {
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      display: inline-block;
+      line-height: 260%;
+      background-color: #343451;
+      color: #fff;
+      padding: 0 10px; }
+    /* line 241, ../components/sass/_layout.scss */
+    .tab-navigation ul.main-nav > li a:hover {
+      color: #fff;
+      background-color: #768EE9; }
+
+/* line 251, ../components/sass/_layout.scss */
 .importants {
   overflow: hidden;
   *zoom: 1;
   background-color: #f4f4f4;
+  border-bottom: 1px #d6d6d6 solid;
   padding-top: 10px;
   padding-bottom: 10px; }
-  /* line 222, ../components/sass/_layout.scss */
+  /* line 260, ../components/sass/_layout.scss */
   .importants .notify-wrapper {
     width: 23.80192%;
     float: right;
     margin-left: 1.59744%;
     display: inline; }
-    /* line 224, ../components/sass/_layout.scss */
+    /* line 262, ../components/sass/_layout.scss */
     .importants .notify-wrapper .notify {
       height: 400px;
       width: 100%;
@@ -443,7 +499,7 @@ ul.top-nav > li a:hover {
       padding: 20px;
       padding-top: 120px;
       position: relative; }
-    /* line 234, ../components/sass/_layout.scss */
+    /* line 272, ../components/sass/_layout.scss */
     .importants .notify-wrapper .notify:before {
       content: "\f12a";
       font-size: 40px;
@@ -454,7 +510,7 @@ ul.top-nav > li a:hover {
       position: absolute;
       left: 35%;
       top: 20px; }
-  /* line 248, ../components/sass/_layout.scss */
+  /* line 286, ../components/sass/_layout.scss */
   .importants .slide-area {
     width: 74.60064%;
     float: right;
@@ -467,26 +523,26 @@ ul.top-nav > li a:hover {
     overflow: hidden;
     *zoom: 1;
     height: 420px; }
-    /* line 253, ../components/sass/_layout.scss */
+    /* line 291, ../components/sass/_layout.scss */
     .importants .slide-area img.sliders {
       max-width: 100%;
       height: auto;
       padding-top: 10px; }
 
-/* line 267, ../components/sass/_layout.scss */
+/* line 305, ../components/sass/_layout.scss */
 .main-tab {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px; }
 
-/* line 274, ../components/sass/_layout.scss */
+/* line 312, ../components/sass/_layout.scss */
 .tab-header {
   width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
   display: inline-block; }
-  /* line 283, ../components/sass/_layout.scss */
+  /* line 321, ../components/sass/_layout.scss */
   .tab-header h3.tab-title {
     width: 40%;
     display: inline-block;
@@ -495,7 +551,7 @@ ul.top-nav > li a:hover {
     padding-bottom: 30px;
     border-bottom: 1px #d6d6d6 solid;
     position: relative; }
-  /* line 295, ../components/sass/_layout.scss */
+  /* line 333, ../components/sass/_layout.scss */
   .tab-header h3.tab-title:after {
     content: " \f0e7";
     position: absolute;
@@ -504,11 +560,11 @@ ul.top-nav > li a:hover {
     color: #d6d6d6;
     font-size: 24px; }
 
-/* line 308, ../components/sass/_layout.scss */
+/* line 346, ../components/sass/_layout.scss */
 .news-area {
   overflow: hidden;
   *zoom: 1; }
-  /* line 310, ../components/sass/_layout.scss */
+  /* line 348, ../components/sass/_layout.scss */
   .news-area article.news {
     width: 32.26837%;
     float: right;
@@ -516,7 +572,7 @@ ul.top-nav > li a:hover {
     display: inline;
     background-color: #f4f4f4;
     border: 1px #d6d6d6 solid; }
-    /* line 315, ../components/sass/_layout.scss */
+    /* line 353, ../components/sass/_layout.scss */
     .news-area article.news .news-thumb {
       overflow: hidden;
       *zoom: 1;
@@ -525,29 +581,29 @@ ul.top-nav > li a:hover {
       display: inline-block;
       margin: auto;
       text-align: center; }
-    /* line 323, ../components/sass/_layout.scss */
+    /* line 361, ../components/sass/_layout.scss */
     .news-area article.news .news-thumb img {
       max-width: 100%;
       margin: auto; }
-    /* line 327, ../components/sass/_layout.scss */
+    /* line 365, ../components/sass/_layout.scss */
     .news-area article.news .news-body {
       padding: 5%; }
-  /* line 332, ../components/sass/_layout.scss */
+  /* line 370, ../components/sass/_layout.scss */
   .news-area article.news:nth-of-type(3n) {
     float: left;
     margin-left: 0;
     *margin-right: -1em;
     display: inline; }
 
-/* line 336, ../components/sass/_layout.scss */
+/* line 374, ../components/sass/_layout.scss */
 .notifications {
   overflow: hidden;
   *zoom: 1;
   background-color: #FF6743; }
-  /* line 340, ../components/sass/_layout.scss */
+  /* line 378, ../components/sass/_layout.scss */
   .notifications .tab-title {
     color: #fff; }
-  /* line 343, ../components/sass/_layout.scss */
+  /* line 381, ../components/sass/_layout.scss */
   .notifications article.notify-body {
     width: 83.06709%;
     float: right;
@@ -565,7 +621,7 @@ ul.top-nav > li a:hover {
     margin-bottom: 20px;
     position: relative;
     min-height: 70px; }
-  /* line 363, ../components/sass/_layout.scss */
+  /* line 401, ../components/sass/_layout.scss */
   .notifications article.notify-body:before {
     content: "\f0a1";
     font-size: 30px;
@@ -578,85 +634,87 @@ ul.top-nav > li a:hover {
     top: 10px;
     padding: 10px; }
 
-/* line 377, ../components/sass/_layout.scss */
+/* line 415, ../components/sass/_layout.scss */
 .educational-notify {
   overflow: hidden;
   *zoom: 1;
-  background-color: #f4f4f4; }
-  /* line 384, ../components/sass/_layout.scss */
+  background-color: #f4f4f4;
+  border-bottom: 1px #d6d6d6 solid; }
+  /* line 423, ../components/sass/_layout.scss */
   .educational-notify a.edu-button {
     width: 49.20128%;
     float: right;
     margin-left: 1.59744%;
     display: inline; }
-  /* line 388, ../components/sass/_layout.scss */
+  /* line 427, ../components/sass/_layout.scss */
   .educational-notify a.edu-button:nth-of-type(2n) {
     float: left;
     margin-left: 0;
     *margin-right: -1em;
     display: inline; }
 
-/* line 392, ../components/sass/_layout.scss */
+/* line 431, ../components/sass/_layout.scss */
 .edu-student {
   overflow: hidden;
   *zoom: 1; }
-  /* line 394, ../components/sass/_layout.scss */
+  /* line 433, ../components/sass/_layout.scss */
   .edu-student a.edu-st-button {
     width: 49.20128%;
     float: right;
     margin-left: 1.59744%;
     display: inline; }
-  /* line 398, ../components/sass/_layout.scss */
+  /* line 437, ../components/sass/_layout.scss */
   .edu-student a.edu-st-button:nth-of-type(2n) {
     float: left;
     margin-left: 0;
     *margin-right: -1em;
     display: inline; }
 
-/* line 402, ../components/sass/_layout.scss */
+/* line 441, ../components/sass/_layout.scss */
 .research {
   overflow: hidden;
   *zoom: 1;
   background-color: #6077C1; }
-  /* line 405, ../components/sass/_layout.scss */
+  /* line 444, ../components/sass/_layout.scss */
   .research a.research-button {
     width: 32.26837%;
     float: right;
     margin-left: 1.59744%;
     display: inline; }
-  /* line 409, ../components/sass/_layout.scss */
+  /* line 448, ../components/sass/_layout.scss */
   .research a.research-button:nth-of-type(3n) {
     float: left;
     margin-left: 0;
     *margin-right: -1em;
     display: inline; }
-  /* line 412, ../components/sass/_layout.scss */
+  /* line 451, ../components/sass/_layout.scss */
   .research .tab-title {
     color: #fff; }
 
-/* line 416, ../components/sass/_layout.scss */
+/* line 455, ../components/sass/_layout.scss */
 .rel-sites {
   overflow: hidden;
   *zoom: 1; }
-  /* line 418, ../components/sass/_layout.scss */
+  /* line 457, ../components/sass/_layout.scss */
   .rel-sites a.rel-button {
     width: 49.20128%;
     float: right;
     margin-left: 1.59744%;
     display: inline; }
-  /* line 422, ../components/sass/_layout.scss */
+  /* line 461, ../components/sass/_layout.scss */
   .rel-sites a.rel-button:nth-of-type(2n) {
     float: left;
     margin-left: 0;
     *margin-right: -1em;
     display: inline; }
 
-/* line 427, ../components/sass/_layout.scss */
+/* line 466, ../components/sass/_layout.scss */
 .services {
   overflow: hidden;
   *zoom: 1;
-  background-color: #f4f4f4; }
-  /* line 430, ../components/sass/_layout.scss */
+  background-color: #f4f4f4;
+  border-top: 1px #d6d6d6 solid; }
+  /* line 470, ../components/sass/_layout.scss */
   .services .service {
     width: 83.06709%;
     float: right;
@@ -666,7 +724,7 @@ ul.top-nav > li a:hover {
     display: block;
     margin: auto; }
 
-/* line 439, ../components/sass/_layout.scss */
+/* line 479, ../components/sass/_layout.scss */
 footer {
   overflow: hidden;
   *zoom: 1;

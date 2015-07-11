@@ -209,11 +209,49 @@ ul.top-nav{
 
 	}
 }
+.tab-navigation{
+		margin:20px 0 10px;
+		padding:0;
+		
+	
+	ul.main-nav{
+		@include span-columns(12,12);
+		@include horizontal-list;
+		text-align : center;
 
+
+		&>li.nav-list{
+			display: inline-block;
+			float : none;
+			padding : 0;
+
+			
+		}
+		&>li a{
+			@include single-transition;
+			
+			display : inline-block;
+			line-height: 260%;
+			background-color : $navi;
+			color : #fff;
+			padding : 0 10px;
+			
+			
+		}
+		&>li a:hover{
+			color : #fff;
+			background-color : $lightblue;
+
+			
+		}
+
+	}
+}
 // -------------slide area ------------------
 .importants{
 	@include clearfix;
 	background-color : $grey1;
+	border-bottom : 1px $grey2 solid;
 	padding:{
 		top : 10px;
 		bottom : 10px;
@@ -377,6 +415,7 @@ ul.top-nav{
 .educational-notify{
  	@include clearfix;
  	background-color : $grey1;
+ 	border-bottom :1px $grey2 solid;
 
  	.note{
  		//@include span-columns(10,12);
@@ -427,6 +466,7 @@ ul.top-nav{
 .services{
 	@include clearfix;
 	background-color : $grey1;
+	border-top :1px $grey2 solid; 
 	.service{
 		@include span-columns(10,12);
 		float : none;
